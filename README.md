@@ -1,0 +1,2 @@
+# kinomaniacy
+Program obsługujący kino
