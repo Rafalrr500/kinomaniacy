@@ -1,0 +1,52 @@
+﻿@page
+@model projekt.Pages.Admin.Register.RegisterClientModel
+@{
+    ViewData["Title"] = "RegisterClient";
+}
+
+<h2>@ViewData["Title"]</h2>
+<div class="text-red">@Model.errorMessage</div>
+
+<div class="container">
+    <form class="form-horizontal" method="post">
+        @Html.Hidden("returnUrl", Model.returnUrl)
+        <div class="form-group">
+            <label asp-for="client.firstName" class="control-label col-sm-2"></label>
+            <div class="col-sm-6">
+                <input asp-for="client.firstName" class="form-control">
+                <span asp-validation-for="client.firstName" class="text-red"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="client.lastName" class="control-label col-sm-2"></label>
+            <div class="col-sm-6">
+                <input asp-for="client.lastName" class="form-control">
+                <span asp-validation-for="client.lastName" class="text-red"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="client.userName" class="control-label col-sm-2"></label>
+            <div class="col-sm-6">
+                <input asp-for="client.userName" class="form-control">
+                <span asp-validation-for="client.userName" class="text-red"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="client.password" class="control-label col-sm-2"></label>
+            <div class="col-sm-6">
+                <input asp-for="client.password" class="form-control">
+                <span asp-validation-for="client.password" class="text-red"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="client.confirmPassword" class="control-label col-sm-2"></label>
+            <div class="col-sm-6">
+                <input asp-for="client.confirmPassword" class="form-control">
+                <span asp-validation-for="client.confirmPassword" class="text-red"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <button class="btn btn btn-primary">Zatwierdź</button>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,14 @@
+﻿@page
+@model projekt.Pages.Admin.Register.IndexModel
+@{
+    ViewData["Title"] = "RegisterPanel";
+}
+<div class="text-center">
+    <h2 class="display-4">Panel rejestracji użytkowników</h2>
+    <h1 class="display-4">Wybierz profil użytkownika</h1>
+    <p>
+        <a asp-page="RegisterAdmin">Admin</a> |
+        <a asp-page="RegisterStaff">Staff</a> |
+        <a asp-page="RegisterClient">Client</a>
+    </p>
+</div>

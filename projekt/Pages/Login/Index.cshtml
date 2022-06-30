@@ -1,0 +1,14 @@
+﻿@page
+@model projekt.Pages.Login.IndexModel
+@{
+    ViewData["Title"] = "LoginPanel";
+}
+<div class="text-center">
+    <h2 class="display-4">Panel logowania</h2>
+    <h1 class="display-4">Wybierz profil użytkownika</h1>
+    <p>
+        <a asp-page="LoginAdmin" >Admin</a> |
+        <a asp-page="LoginStaff">Staff</a> |
+        <a asp-page="LoginClient">Client</a>
+    </p>
+</div>
